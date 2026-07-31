@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>College Events</title>
+
+<link rel="stylesheet" href="events.css">
+
+</head>
+
+
+<body>
+
+<style>*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+
+}
+
+
+body{
+
+background:#f8fafc;
+color:#1e293b;
+
+}
+
+
+
+header{
+
+background:white;
+padding:25px 8%;
+box-shadow:0 5px 20px #e2e8f0;
+
+}
+
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+color:#2563eb;
+
+}
+
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+
+
+
+
+.hero{
+
+text-align:center;
+
+padding:90px 10%;
+
+background:
+
+linear-gradient(
+120deg,
+#dbeafe,
+#ede9fe
+);
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+color:#1d4ed8;
+
+}
+
+
+.hero p{
+
+font-size:20px;
+margin:20px;
+
+}
+
+
+
+.search-box{
+
+background:white;
+
+padding:10px;
+
+border-radius:50px;
+
+display:flex;
+
+max-width:600px;
+
+margin:auto;
+
+box-shadow:0 10px 30px #cbd5e1;
+
+}
+
+
+
+.search-box input{
+
+flex:1;
+border:none;
+padding:15px;
+outline:none;
+
+}
+
+
+
+button{
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+}
+
+
+
+
+
+section{
+
+padding:60px 8%;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+font-size:38px;
+
+margin-bottom:40px;
+
+color:#1e40af;
+
+}
+
+
+
+
+.categories{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+
+
+.cat{
+
+padding:30px;
+
+border-radius:25px;
+
+text-align:center;
+
+font-size:35px;
+
+}
+
+
+
+.cat h3{
+
+font-size:25px;
+
+}
+
+
+.cat p{
+
+font-size:15px;
+
+}
+
+
+
+.blue{
+
+background:#dbeafe;
+
+}
+
+
+
+.purple{
+
+background:#ede9fe;
+
+}
+
+
+.green{
+
+background:#dcfce7;
+
+}
+
+
+.orange{
+
+background:#ffedd5;
+
+}
+
+
+
+
+
+
+.event-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+
+.event-card{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px #e2e8f0;
+
+transition:.3s;
+
+}
+
+
+
+.event-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.event-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+}
+
+
+.event-card div{
+
+padding:25px;
+
+}
+
+
+
+.event-card h3{
+
+color:#2563eb;
+
+font-size:25px;
+
+}
+
+
+
+.event-card span{
+
+line-height:2;
+
+color:#64748b;
+
+}
+
+
+
+.event-card button{
+
+margin-top:15px;
+
+}
+
+
+
+
+
+
+
+.timeline{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+}
+
+
+
+.timeline div{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px #ddd;
+
+text-align:center;
+
+}
+
+
+
+
+
+footer{
+
+background:#1e293b;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.categories,
+.event-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.timeline{
+
+flex-direction:column;
+
+}
+
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+
+}</style>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+🎓 Campus Connect
+</div>
+
+
+<ul>
+
+<li>Events</li>
+<li>Schedule</li>
+
+
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+<!-- Hero -->
+
+
+<section class="hero">
+
+
+<h1>
+Discover College Events
+</h1>
+
+
+<p>
+Explore competitions, workshops, cultural programs
+and technical events happening in our campus.
+</p>
+
+
+
+<div class="search-box">
+
+<input placeholder="Search events...">
+
+<button>
+Search
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Categories -->
+
+
+<section>
+
+
+<h2>
+Event Categories
+</h2>
+
+
+<div class="categories">
+
+
+<div class="cat blue">
+💻
+<h3>Technical</h3>
+<p>Coding | AI | Robotics</p>
+</div>
+
+
+<div class="cat purple">
+🎭
+<h3>Cultural</h3>
+<p>Dance | Music | Drama</p>
+</div>
+
+
+
+<div class="cat green">
+🏆
+<h3>Competitions</h3>
+<p>Quiz | Debate | Gaming</p>
+</div>
+
+
+
+<div class="cat orange">
+🛠
+<h3>Workshops</h3>
+<p>Skills | Career | Training</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- Events -->
+
+
+<section class="event-section">
+
+
+<h2>
+Upcoming Events
+</h2>
+
+
+<div class="event-grid">
+
+
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<div>
+
+<h3>
+Code Master Challenge
+</h3>
+
+<p>
+Competitive Programming Contest
+</p>
+
+<span>
+📅 15 August 2026
+</span>
+
+<br>
+
+<span>
+📍 Computer Lab
+</span>
+
+
+<button>
+Register
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87">
+
+
+<div>
+
+<h3>
+AI Innovation Workshop
+</h3>
+
+<p>
+Learn Artificial Intelligence
+</p>
+
+
+<span>
+📅 18 August 2026
+</span>
+
+<br>
+
+<span>
+📍 Seminar Hall
+</span>
+
+
+<button>
+Register
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+
+<div>
+
+<h3>
+Cultural Fiesta
+</h3>
+
+<p>
+Dance and Music Celebration
+</p>
+
+
+<span>
+📅 22 August 2026
+</span>
+
+<br>
+
+<span>
+📍 Auditorium
+</span>
+
+
+<button>
+Register
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72">
+
+
+<div>
+
+<h3>
+Startup Expo
+</h3>
+
+<p>
+Business Ideas Presentation
+</p>
+
+
+<span>
+📅 25 August 2026
+</span>
+
+<br>
+
+<span>
+📍 Innovation Center
+</span>
+
+
+<button>
+Register
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+
+<div>
+
+<h3>
+Web Development Hackathon
+</h3>
+
+<p>
+Build Creative Websites
+</p>
+
+
+<span>
+📅 28 August 2026
+</span>
+
+<br>
+
+<span>
+📍 Programming Lab
+</span>
+
+
+<button>
+Register
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="event-card">
+
+<img src="https://images.unsplash.com/photo-1511578314322-379afb476865">
+
+
+<div>
+
+<h3>
+Photography Contest
+</h3>
+
+<p>
+Capture Beautiful Moments
+</p>
+
+
+<span>
+📅 30 August 2026
+</span>
+
+<br>
+
+<span>
+📍 College Campus
+</span>
+
+
+<button>
+Register
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Schedule -->
+
+
+<section class="schedule">
+
+
+<h2>
+Today's Schedule
+</h2>
+
+
+<div class="timeline">
+
+
+<div>
+<h3>09:00 AM</h3>
+<p>Opening Ceremony</p>
+</div>
+
+
+<div>
+<h3>11:00 AM</h3>
+<p>Technical Events</p>
+</div>
+
+
+<div>
+<h3>02:00 PM</h3>
+<p>Cultural Programs</p>
+</div>
+
+
+<div>
+<h3>05:00 PM</h3>
+<p>Prize Distribution</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<h3>
+Campus Connect
+</h3>
+
+<p>
+College Event Management System
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+</html>

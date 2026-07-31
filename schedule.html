@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Event Schedule | Campus Connect</title>
+
+<link rel="stylesheet" href="schedule.css">
+
+</head>
+
+
+<body>
+
+    <style>*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+
+}
+
+
+body{
+
+background:#fffaf0;
+
+color:#24324a;
+
+}
+
+
+
+
+
+.hero{
+
+height:450px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+
+background:
+
+linear-gradient(
+rgba(245,158,11,.55),
+rgba(14,116,144,.65)
+),
+
+url("https://images.unsplash.com/photo-1511578314322-379afb476865");
+
+
+background-size:cover;
+
+background-position:center;
+
+color:white;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+
+margin-top:20px;
+
+}
+
+
+
+
+
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+font-size:38px;
+
+color:#0f766e;
+
+margin-bottom:40px;
+
+}
+
+
+
+
+
+
+
+.search{
+
+text-align:center;
+
+}
+
+
+
+.search-box{
+
+max-width:600px;
+
+margin:auto;
+
+display:flex;
+
+background:white;
+
+padding:8px;
+
+border-radius:40px;
+
+box-shadow:0 10px 25px #fde68a;
+
+}
+
+
+
+.search input{
+
+flex:1;
+
+border:none;
+
+padding:15px;
+
+outline:none;
+
+}
+
+
+
+button{
+
+background:#0f766e;
+
+color:white;
+
+border:none;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+}
+
+
+
+
+
+
+
+
+.event-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+}
+
+
+
+
+
+.card{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px #e7dcc8;
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+
+
+.card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+
+
+.content{
+
+padding:25px;
+
+}
+
+
+
+.content h3{
+
+color:#0f766e;
+
+font-size:25px;
+
+}
+
+
+
+
+
+.tag{
+
+padding:7px 15px;
+
+border-radius:20px;
+
+display:inline-block;
+
+margin:15px 0;
+
+font-weight:bold;
+
+}
+
+
+
+.blue{
+
+background:#dbeafe;
+
+color:#2563eb;
+
+}
+
+
+.yellow{
+
+background:#fef3c7;
+
+color:#b45309;
+
+}
+
+
+.peach{
+
+background:#fed7aa;
+
+color:#c2410c;
+
+}
+
+
+.sand{
+
+background:#ede0c8;
+
+color:#92400e;
+
+}
+
+
+.green{
+
+background:#dcfce7;
+
+color:#15803d;
+
+}
+
+
+
+
+
+.details{
+
+line-height:1.8;
+
+color:#64748b;
+
+margin:15px 0;
+
+}
+
+
+
+
+
+
+
+footer{
+
+background:#134e4a;
+
+color:white;
+
+padding:35px;
+
+text-align:center;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.event-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+
+}</style>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Campus Event Schedule 2026
+</h1>
+
+<p>
+Explore every event, check timings,
+venues and connect with coordinators.
+</p>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- SEARCH -->
+
+<section class="search">
+
+<h2>
+🔎 Search Your Event
+</h2>
+
+
+<div class="search-box">
+
+<input placeholder="Search event, venue or coordinator">
+
+<button>
+Search
+</button>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="events">
+
+
+<h2>
+Upcoming Events
+</h2>
+
+
+<div class="event-grid">
+
+
+
+
+
+<!-- CARD 1 -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+
+<div class="content">
+
+
+<h3>
+Code Arena
+</h3>
+
+
+<span class="tag blue">
+Technical
+</span>
+
+
+<p>
+A competitive programming challenge
+for future developers.
+</p>
+
+
+<div class="details">
+
+📅 15 August 2026
+
+<br>
+
+⏰ 10:00 AM - 1:00 PM
+
+<br>
+
+📍 Computer Lab 1
+
+<br>
+
+👤 Rahul
+
+<br>
+
+📞 +91 98765 43210
+
+</div>
+
+
+<button>
+View Details
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CARD 2 -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87">
+
+
+<div class="content">
+
+
+<h3>
+AI Innovation Workshop
+</h3>
+
+
+<span class="tag yellow">
+Workshop
+</span>
+
+
+<p>
+Hands-on session about AI,
+Machine Learning and future technology.
+</p>
+
+
+<div class="details">
+
+📅 18 August 2026
+
+<br>
+
+⏰ 11:00 AM - 3:00 PM
+
+<br>
+
+📍 Seminar Hall
+
+<br>
+
+👤 Priya
+
+<br>
+
+📞 +91 98765 54321
+
+</div>
+
+
+<button>
+View Details
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CARD 3 -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1506157786151-b8491531f063">
+
+
+<div class="content">
+
+
+<h3>
+Cultural Fiesta
+</h3>
+
+
+<span class="tag peach">
+Cultural
+</span>
+
+
+<p>
+Music, dance and creative
+performances by students.
+</p>
+
+
+<div class="details">
+
+📅 22 August 2026
+
+<br>
+
+⏰ 4:00 PM - 8:00 PM
+
+<br>
+
+📍 Open Stage
+
+<br>
+
+👤 Ananya
+
+<br>
+
+📞 +91 98765 67890
+
+</div>
+
+
+<button>
+View Details
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CARD 4 -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72">
+
+
+<div class="content">
+
+
+<h3>
+Startup Expo
+</h3>
+
+
+<span class="tag sand">
+Innovation
+</span>
+
+
+<p>
+Students showcase creative ideas
+and business solutions.
+</p>
+
+
+<div class="details">
+
+📅 25 August 2026
+
+<br>
+
+⏰ 9:30 AM - 2:00 PM
+
+<br>
+
+📍 Innovation Center
+
+<br>
+
+👤 Karthik
+
+<br>
+
+📞 +91 98765 98765
+
+</div>
+
+
+<button>
+View Details
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CARD 5 -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30">
+
+
+<div class="content">
+
+
+<h3>
+Photography Contest
+</h3>
+
+
+<span class="tag green">
+Creative
+</span>
+
+
+<p>
+Capture campus moments and
+show your creativity.
+</p>
+
+
+<div class="details">
+
+📅 28 August 2026
+
+<br>
+
+⏰ 10:30 AM - 4:00 PM
+
+<br>
+
+📍 College Campus
+
+<br>
+
+👤 Naveen
+
+<br>
+
+📞 +91 98765 55555
+
+</div>
+
+
+<button>
+View Details
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CARD 6 -->
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+
+
+<div class="content">
+
+
+<h3>
+Leadership Summit
+</h3>
+
+
+<span class="tag blue">
+Conference
+</span>
+
+
+<p>
+A platform to learn leadership,
+teamwork and career skills.
+</p>
+
+
+<div class="details">
+
+📅 30 August 2026
+
+<br>
+
+⏰ 9:00 AM - 1:30 PM
+
+<br>
+
+📍 Main Auditorium
+
+<br>
+
+👤 Event Team
+
+<br>
+
+📞 +91 98765 11111
+
+</div>
+
+
+<button>
+View Details
+</button>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+<h3>
+Campus Connect
+</h3>
+
+<p>
+College Event Management System
+</p>
+
+</footer>
+
+
+</body>
+
+</html>

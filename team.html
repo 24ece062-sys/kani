@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Team | Campus Connect</title>
+
+<link rel="stylesheet" href="team.css">
+
+</head>
+
+
+<body>
+
+    <style>*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+
+}
+
+
+body{
+
+background:#f8fbff;
+color:#1e293b;
+
+}
+
+
+
+header{
+
+padding:25px 8%;
+background:white;
+
+box-shadow:0 5px 20px #e2e8f0;
+
+}
+
+
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+color:#2563eb;
+
+}
+
+
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+
+
+nav a{
+
+text-decoration:none;
+color:#334155;
+font-weight:600;
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+height:450px;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+text-align:center;
+
+
+background:
+
+
+linear-gradient(
+rgba(37,99,235,.65),
+rgba(124,58,237,.65)
+),
+
+
+url("https://images.unsplash.com/photo-1523580846011-d3a5bc25702b");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+color:white;
+
+}
+
+
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+
+margin-top:20px;
+
+}
+
+
+
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+font-size:38px;
+
+color:#2563eb;
+
+margin-bottom:40px;
+
+}
+
+
+
+
+
+/* MAIN COORDINATOR */
+
+
+.coordinator-card{
+
+background:white;
+
+display:flex;
+
+align-items:center;
+
+gap:40px;
+
+padding:40px;
+
+border-radius:30px;
+
+
+box-shadow:0 15px 40px #dbeafe;
+
+}
+
+
+.coordinator-card img{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+border:8px solid #dbeafe;
+
+}
+
+
+
+.coordinator-info h1{
+
+color:#2563eb;
+
+}
+
+
+
+
+
+/* PROFILE CARDS */
+
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+}
+
+
+
+.profile-card{
+
+
+background:white;
+
+width:300px;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:25px;
+
+
+box-shadow:0 10px 30px #e2e8f0;
+
+
+transition:.3s;
+
+}
+
+
+
+.profile-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+
+
+.profile-card img{
+
+width:130px;
+
+height:130px;
+
+border-radius:50%;
+
+}
+
+
+
+
+
+/* DEPARTMENT */
+
+
+.department-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+
+
+.department-grid div{
+
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px #e2e8f0;
+
+}
+
+
+
+
+
+/* ACHIEVEMENTS */
+
+
+.numbers{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+}
+
+
+.numbers div{
+
+background:#eff6ff;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+
+
+.numbers h1{
+
+color:#2563eb;
+
+}
+
+
+
+
+footer{
+
+background:#1e3a8a;
+
+color:white;
+
+text-align:center;
+
+padding:35px;
+
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.cards,
+.numbers,
+.coordinator-card{
+
+flex-direction:column;
+
+}
+
+
+
+.department-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+}</style>
+
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+🎓 Campus Connect
+</div>
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+
+
+
+<!-- HERO SECTION -->
+
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+Meet The Minds Behind The Events
+</h1>
+
+
+<p>
+
+The passionate team working together
+to create unforgettable college experiences.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- MAIN COORDINATOR -->
+
+
+<section class="main-coordinator">
+
+
+<h2>
+⭐ Main Event Coordinator
+</h2>
+
+
+
+<div class="coordinator-card">
+
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+
+
+<div class="coordinator-info">
+
+
+<h1>
+Your Name
+</h1>
+
+
+<h3>
+Chief Student Coordinator
+</h3>
+
+
+<p>
+
+Responsible for overall planning,
+team management, communication
+and successful execution of events.
+
+</p>
+
+
+
+<div class="contact">
+
+📞 +91 98765 43210
+
+<br>
+
+📧 coordinator@college.com
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- FACULTY TEAM -->
+
+
+<section class="team-section">
+
+
+<h2>
+Faculty Guidance Team
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="profile-card">
+
+
+<img src="https://randomuser.me/api/portraits/men/45.jpg">
+
+
+<h3>
+Dr. Arun Kumar
+</h3>
+
+
+<p>
+Faculty Coordinator
+</p>
+
+
+<p>
+Computer Science Department
+</p>
+
+
+<div>
+📞 +91 98765 11111
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="profile-card">
+
+
+<img src="https://randomuser.me/api/portraits/women/55.jpg">
+
+
+<h3>
+Dr. Priya Sharma
+</h3>
+
+
+<p>
+Faculty Advisor
+</p>
+
+
+<p>
+Management Department
+</p>
+
+
+<div>
+📞 +91 98765 22222
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- COORDINATORS -->
+
+
+<section class="team-section">
+
+
+<h2>
+Student Coordinators
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="profile-card">
+
+
+<img src="https://randomuser.me/api/portraits/men/20.jpg">
+
+
+<h3>
+Rahul
+</h3>
+
+
+<p>
+Co Coordinator
+</p>
+
+
+<p>
+Handles registrations & scheduling
+</p>
+
+
+<div>
+📞 +91 98765 33333
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="profile-card">
+
+
+<img src="https://randomuser.me/api/portraits/women/30.jpg">
+
+
+<h3>
+Ananya
+</h3>
+
+
+<p>
+Co Coordinator
+</p>
+
+
+<p>
+Handles volunteers & communication
+</p>
+
+
+<div>
+📞 +91 98765 44444
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- DEPARTMENT TEAMS -->
+
+
+<section class="department">
+
+
+<h2>
+Our Working Teams
+</h2>
+
+
+
+<div class="department-grid">
+
+
+
+<div>
+
+<h3>
+💻 Technical Team
+</h3>
+
+<p>
+Coding | AI | Robotics | Workshops
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+🎭 Cultural Team
+</h3>
+
+<p>
+Dance | Music | Stage Management
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+🎨 Design Team
+</h3>
+
+<p>
+Posters | Media | Photography
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+🤝 Hospitality Team
+</h3>
+
+<p>
+Guest Management | Support
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ACHIEVEMENT -->
+
+
+<section class="achievement">
+
+
+<h2>
+Our Team Achievements
+</h2>
+
+
+
+<div class="numbers">
+
+
+<div>
+<h1>
+50+
+</h1>
+<p>
+Events Organized
+</p>
+</div>
+
+
+
+<div>
+<h1>
+5000+
+</h1>
+<p>
+Students Managed
+</p>
+</div>
+
+
+
+<div>
+<h1>
+100+
+</h1>
+<p>
+Volunteers
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+Campus Connect
+</h3>
+
+
+<p>
+Together we create unforgettable events
+</p>
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>
